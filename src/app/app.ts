@@ -7,7 +7,6 @@ import { FormsModule, NgForm } from '@angular/forms';
   standalone: true,
   imports: [CommonModule, FormsModule],
   templateUrl: './app.html',
-  styleUrls: ['./app.css']
 })
 export class AppComponent {
   title = 'Max-Dam Damian Czmok';
