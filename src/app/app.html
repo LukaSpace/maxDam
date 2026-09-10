@@ -1,80 +1,171 @@
-<div class="min-h-screen bg-slate-950 text-white">
-  <header class="absolute inset-x-0 top-0 z-30 border-b border-white/10 bg-slate-900/10 backdrop-blur-sm">
-    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-      <div class="inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-3 py-2 shadow-lg shadow-cyan-500/10">
-        <span class="flex h-8 w-8 items-center justify-center rounded-full border border-cyan-400/70 bg-cyan-400/10 text-sm font-black text-cyan-300 shadow-lg shadow-cyan-500/20">M</span>
-        <span class="text-sm font-black tracking-[0.24em] text-white sm:text-base">MAX-DAM</span>
-      </div>
+<div class="min-h-screen flex flex-col font-sans">
 
-      <button type="button" class="menu-button" aria-label="Open menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+  <!-- 1. STICKY HEADER (Stały nagłówek) -->
+  <header class="sticky top-0 z-50 bg-gray-900 bg-opacity-90 backdrop-blur-md border-b border-slate-800 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        
+        <!-- LOGO MAX-DAM z sygnetem Ceccato -->
+        <a href="#" class="flex items-center gap-2 text-white text-2xl font-black tracking-wider">
+          <!-- <div class="w-8 h-8 bg-cyan-custom flex items-center justify-center font-black text-slate-900 rounded-sm">
+            ✦
+          </div> -->
+          <img src="assets/logo.png" alt="Logo Max-Dam" class="h-10 w-auto">
+        </a>
+
+        <!-- PRZYCISKI NAWIGACYJNE -->
+        <!-- <nav class="flex items-center space-x-2 sm:space-x-6">
+          <a href="#o-nas" class="px-3 py-2 text-sm sm:text-base font-bold text-white hover:text-cyan-custom transition-colors">
+            O NAS
+          </a>
+          <a href="#realizacje" class="px-3 py-2 text-sm sm:text-base font-bold text-white hover:text-cyan-custom transition-colors">
+            REALIZACJE
+          </a>
+          <a href="#kontakt" class="px-3 py-2 text-sm sm:text-base font-bold text-white hover:text-cyan-custom transition-colors">
+            KONTAKT
+          </a>
+        </nav> -->
+
+      </div>
     </div>
   </header>
 
-  <main class="relative overflow-hidden">
-    <div class="hero-sky"></div>
+  <main class="flex-grow">
 
-    <section class="relative mx-auto flex max-w-7xl items-end justify-center px-4 pb-0 pt-24 sm:px-6 lg:px-8">
-      <div class="w-full max-w-6xl">
-        <div class="machine-frame">
-          <div class="machine-header">
-            <span class="header-mark">✦</span>
-            <span class="header-title">MAX-DAM</span>
-            <span class="header-mark">✦</span>
+    <!-- 2. HERO SECTION z podwójnym logo na środku i wcięciem "V" u dołu -->
+    <section class="relative bg-slate-950 text-white pt-12 pb-28 clip-v-shape border-b-4 border-cyan-custom">
+      <!-- Tło ze zdjęciem -->
+      <div class="absolute inset-0 z-0 opacity-70 bg-cover bg-center" 
+           style="background-image: url('assets/bg.png');">
+      </div>
+      <div class="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-transparent to-slate-950 z-0"></div>
+
+      <div class="relative z-10 max-w-4xl mx-auto px-4 text-center flex flex-col items-center py-12">
+        
+        <!-- LOGO CECCATO + MAX-DAM na środku (dokładnie jak na obrazku) -->
+         <!-- <div class="bg-white/10 backdrop-blur-md border border-cyan-custom rounded-lg p-6 flex flex-col items-center gap-4 shadow-lg">
+          <img src="assets/logo.png" alt="Logo Max-Dam" class="h-16 w-auto filter drop-shadow-[0_35px_35px_rgba(100,100,100,0.5)]">
+          <h1 class="text-4xl sm:text-6xl font-black tracking-wider text-white">MAX-DAM</h1>
+          <p class="text-xl sm:text-2xl font-extrabold text-slate-300 tracking-widest border-t border-slate-700 pt-2 mt-2">
+            SPRZEDAŻ | SERWIS | MONTAŻ
+          </p>
+        </div> -->
+        <div class="mb-10 text-center bg-white bg-opacity-10 backdrop-blur-lg rounded-lg shadow-lg">
+          <div class="flex items-center justify-center gap-3 text-4xl sm:text-6xl font-black tracking-wider text-white mb-1">
+            <!-- <span class="text-cyan-custom text-6xl sm:text-8xl">✦</span> -->
+             <img src="assets/logo.png" alt="Logo Max-Dam" class="h-12 w-auto filter drop-shadow-[0_35px_35px_rgba(100,100,100,0.5)]">
+            MAX-DAM
           </div>
-
-          <div class="arch arch-left"></div>
-          <div class="arch arch-right"></div>
-          <div class="pipe pipe-left"></div>
-          <div class="pipe pipe-right"></div>
-
-          <div class="brush-row">
-            <div class="brush brush-left"></div>
-            <div class="brush brush-right"></div>
-          </div>
-
-          <div class="car-body">
-            <div class="car-window"></div>
+          <div class="flex items-center justify-center gap-2 text-xl sm:text-2xl font-extrabold text-slate-300 tracking-widest border-t border-slate-700 pt-2 mt-2">
+            SPRZEDAŻ | SERWIS | MONTAŻ
           </div>
         </div>
+
+        <!-- Przycisk z neonowym podświetleniem -->
+        <!-- <a href="#kontakt" class="btn-cyan-glow px-10 py-4 rounded-md text-lg tracking-wider transition-all">
+          SKONTAKTUJ SIĘ
+        </a> -->
+
       </div>
     </section>
 
-    <section class="relative bg-white">
-      <div class="mx-auto max-w-5xl px-5 py-14 text-center sm:py-20">
-        <p class="text-2xl font-black uppercase tracking-[0.12em] text-slate-900 sm:text-3xl lg:text-5xl">
-          strona w przygotowaniu
+    <!-- 3. KARTA 1: AUTORYZOWANY SPRZEDAWCA -->
+    <section id="o-nas" class="py-12 px-4 max-w-3xl mx-auto">
+      <div class="bg-white rounded-xl p-8 sm:p-12 text-center shadow-md border border-slate-200">
+        <h2 class="text-2xl sm:text-3xl font-black text-slate-900 uppercase tracking-tight mb-4">
+          AUTORYZOWANY SPRZEDAWCA
+        </h2>
+        <p class="text-slate-600 leading-relaxed mb-8 max-w-xl mx-auto text-sm sm:text-base">
+          Strona w przygotowaniu. Wkrótce znajdziesz tu pełną ofertę usług autoryzowanego sprzedawcy Ceccato, a także informacje o profesjonalnym serwisie i wsparciu technicznym.
         </p>
+        <!-- <a href="#kontakt" class="inline-block btn-cyan-glow px-8 py-3 rounded-md text-sm">
+          SKONTAKTUJ SIĘ
+        </a> -->
       </div>
     </section>
+
+    <!-- 4. KARTA 2: PROFESJONALNY SERWIS -->
+    <!-- <section id="realizacje" class="py-6 px-4 max-w-3xl mx-auto">
+      <div class="bg-white rounded-xl p-8 sm:p-12 text-center shadow-md border border-slate-200">
+        <h2 class="text-2xl sm:text-3xl font-black text-slate-900 uppercase tracking-tight mb-4">
+          PROFESJONALNY SERWIS
+        </h2>
+        <p class="text-slate-600 leading-relaxed mb-8 max-w-xl mx-auto text-sm sm:text-base">
+          Zapewniamy montaż, wykwalifikowany serwis gwarancyjny i pogwarancyjny, przeglądy techniczne oraz szybki dostęp do oryginalnych części zamiennych na terenie całego kraju.
+        </p>
+        <a href="#kontakt" class="inline-block btn-cyan-glow px-8 py-3 rounded-md text-sm">
+          SKONTAKTUJ SIĘ
+        </a>
+      </div>
+    </section>
+
+    <!-- 5. KARTA 3: ZAUFAJ DOŚWIADCZENIU (OD 2004) -->
+    <!-- <section class="py-6 px-4 max-w-3xl mx-auto mb-12">
+      <div class="bg-white rounded-xl p-8 sm:p-12 text-center shadow-md border border-slate-200">
+        <h2 class="text-2xl sm:text-3xl font-black text-slate-900 uppercase tracking-tight mb-4">
+          ZAUFAJ DOŚWIADCZENIU <br><span class="text-cyan-custom">(OD 2004)</span>
+        </h2>
+        <p class="text-slate-600 leading-relaxed mb-8 max-w-xl mx-auto text-sm sm:text-base">
+          Firma <strong>Max-Dam Damian Czmok</strong> istnieje na rynku od ponad 20 lat. Nasza rzetelność, sumienność i wiedza techniczna gwarantują długowieczność oraz stabilną pracę Twojej myjni.
+        </p>
+        <a href="#kontakt" class="inline-block btn-cyan-glow px-8 py-3 rounded-md text-sm">
+          SKONTAKTUJ SIĘ
+        </a>
+      </div>
+    </section> -->
+
+    <!-- 6. FORMULARZ KONTAKTOWY (Wstawka z koncepcji nr 2) -->
+    <!-- <section id="kontakt" class="py-16 bg-slate-200 border-t border-slate-300">
+      <div class="max-w-2xl mx-auto px-4">
+        <div class="bg-white rounded-2xl p-8 sm:p-10 shadow-lg border border-slate-300">
+          <h3 class="text-2xl font-black text-center text-slate-900 mb-2 uppercase">FORMULARZ KONTAKTOWY</h3>
+          <p class="text-center text-slate-600 text-sm mb-8">Napisz do nas, odpowiemy najszybciej jak to możliwe.</p>
+
+          <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" class="space-y-4">
+            <div>
+              <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Imię i Nazwisko</label>
+              <input type="text" name="name" [(ngModel)]="formData.name" required
+                     class="w-full px-4 py-3 rounded bg-slate-50 border border-slate-300 focus:outline-none focus:border-cyan-custom">
+            </div>
+            <div>
+              <label class="block text-xs font-bold uppercase text-slate-700 mb-1">E-mail</label>
+              <input type="email" name="email" [(ngModel)]="formData.email" required email
+                     class="w-full px-4 py-3 rounded bg-slate-50 border border-slate-300 focus:outline-none focus:border-cyan-custom">
+            </div>
+            <div>
+              <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Wiadomość</label>
+              <textarea name="message" rows="4" [(ngModel)]="formData.message" required
+                        class="w-full px-4 py-3 rounded bg-slate-50 border border-slate-300 focus:outline-none focus:border-cyan-custom"></textarea>
+            </div>
+            <button type="submit" [disabled]="!contactForm.form.valid"
+                    class="w-full btn-cyan-glow py-4 rounded font-black text-base uppercase transition-all disabled:opacity-50">
+              WYŚLIJ WIADOMOŚĆ
+            </button>
+          </form>
+        </div>
+      </div>
+    </section> -->
+
   </main>
 
-  <footer class="bg-white/95 text-slate-800">
-    <div class="mx-auto grid max-w-6xl gap-8 px-4 py-10 text-sm sm:grid-cols-2 sm:px-6 lg:grid-cols-4 lg:px-8">
+  <!-- 7. STOPKA Z DANYMI FIRMY (Nawiązująca do dołu szablonu ze zdjęcia) -->
+  <footer class="bg-slate-900 text-slate-400 py-10 border-t-4 border-cyan-custom">
+    <div class="max-w-5xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      
+      <!-- Dane teleadresowe -->
       <div>
-        <p class="footer-label">MAX-DAM</p>
-        <p>Myjnia automatyczna</p>
+        <p class="text-slate-300 font-bold text text-lg"> MAX-DAM Damian Czmok</p>
+        <p class="text-md text-slate-400 mt-1 mb-3">Autoryzowany Sprzedawca i Serwis Ceccato </p>
+        <p class="text-slate-200 font-bold">Telefon: <a href="tel:+48668401280" class="text-cyan-custom hover:underline">+48 668 401 280</a></p>
+        <p class="text-slate-200 font-bold">E-mail: <a href="mailto:damczm@wp.pl" class="text-cyan-custom hover:underline">damczm&#64;wp.pl</a></p>
+        <p class="text-md text-slate-200 font-bold">Adres: <a class="text-cyan-custom hover:underline" href="https://maps.google.com/?q=ul.+Tokarska+12,+44-151+Gliwice" target="_blank">ul. Tokarska 12, 44-151 Gliwice</a> </p>
       </div>
 
-      <div>
-        <p class="footer-label">Kontakt</p>
-        <p>+48 000 000 000</p>
-        <p>kontakt@max-dam.pl</p>
-      </div>
-
-      <div>
-        <p class="footer-label">Adres</p>
-        <p>ul. Przemysłowa 12</p>
-        <p>00-001 Warszawa</p>
-      </div>
-
-      <div>
-        <p class="footer-label">Godziny pracy</p>
-        <p>Pon.-Ndz.: 8:00–20:00</p>
+      <!-- Informacje o prawach autorskich -->
+      <div class="text-right md:text-left md:flex md:flex-col md:justify-end md:items-end self-end">
+        <p class="text-slate-400 text-sm">&copy; 2026 LukaSpace Gliwice. Wszelkie prawa zastrzeżone.</p>
       </div>
     </div>
   </footer>
+
 </div>
