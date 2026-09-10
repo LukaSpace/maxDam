@@ -14,10 +14,12 @@ describe('App', () => {
     expect(app).toBeTruthy();
   });
 
-  it('should render title', async () => {
+  it('should render the MAX-DAM branding and coming soon message', async () => {
     const fixture = TestBed.createComponent(App);
     await fixture.whenStable();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, maxDam');
+
+    expect(compiled.textContent).toContain('MAX-DAM');
+    expect(compiled.textContent).toContain('strona w przygotowaniu');
   });
 });
