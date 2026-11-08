@@ -21,13 +21,22 @@ export const routes: Routes = [
     path: 'oferta/myjnie-ciezarowe',
     loadComponent: () => import('./pages/truck-wash/truck-wash.component').then(m => m.TruckWashComponent)
   },
+  // {
+  //   path: 'oferta/:slug',
+  //   loadComponent: () => import('./pages/product-detail/product-detail.component').then(m => m.ProductDetailComponent)
+  // },
   {
     path: 'oferta/:slug',
-    loadComponent: () => import('./pages/product-detail/product-detail.component').then(m => m.ProductDetailComponent)
+    redirectTo: 'w-budowie',
+    pathMatch: 'full'
   },
   {
     path: 'kontakt',
     loadComponent: () => import('./pages/contact/contact.component').then(m => m.ContactComponent)
+  },
+  {
+    path: 'w-budowie',
+    loadComponent: () => import('./pages/under-construction/under-construction.component').then(m => m.UnderConstructionComponent)
   },
   { path: '**', redirectTo: '' }
 ];

@@ -15,8 +15,9 @@
   --color-brand-900: #103f61;
   --color-brand-950: #082940;
   --color-ink: #10243a;
-  --shadow-soft: 0 16px 45px rgba(15, 45, 75, .10);
+  --shadow-soft: 0 1rem 2.8125rem rgba(15, 45, 75, .10);
   --radius-4xl: 2rem;
+  --breakpoint-3xl: 120rem;
   --font-sans: Inter, ui-sans-serif, system-ui, sans-serif;
 }
 
@@ -38,11 +39,30 @@ button, a { -webkit-tap-highlight-color: transparent; }
 ::selection { background: #b9e2ff; color: #082940; }
 
 .container-shell {
-  width: min( min(100% - 2rem, 1200px), 1200px );
+  width: 100%;
+  max-width: none;
+  padding-inline: clamp(1rem, 2vw, 5rem);
   margin-inline: auto;
 }
 
-.section-space { padding-block: clamp(4rem, 7vw, 6.5rem); }
+/* Laptop is the visual baseline; smaller and larger screens scale fluidly. */
+.section-space { padding-block: clamp(3rem, 5vw, 8rem); }
+:root { font-size: 100%; }
+html { scroll-padding-top: 5rem; }
+body { min-width: 0; }
+img, video { max-width: 100%; }
+main, section, article { min-width: 0; }
+/* Progressive enhancement: global typography grows on wide displays. */
+@media (min-width: 96rem) {
+  :root { font-size: clamp(1rem, 0.88rem + 0.22vw, 1.25rem); }
+}
+@media (min-width: 120rem) {
+  :root { font-size: clamp(1.15rem, 0.9rem + 0.24vw, 1.5rem); }
+}
+@media (max-width: 39.999rem) {
+  .section-space { padding-block: 3rem; }
+}
+
 
 .reveal-up {
   animation: reveal-up .7s cubic-bezier(.2,.75,.25,1) both;

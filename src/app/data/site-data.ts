@@ -11,13 +11,12 @@ export interface Product {
 }
 
 export const company = {
-  name: 'MAX-DAM',
-  tagline: 'Nowoczesne rozwiązania myjące dla Twojego biznesu',
-  description: 'Wspieramy inwestorów i przedsiębiorców w wyborze nowoczesnych systemów myjących. Pomagamy dobrać rozwiązanie do potrzeb obiektu, rodzaju pojazdów i planowanej skali działalności.',
-  phone: '+48 000 000 000',
-  email: 'biuro@maxdam.pl',
-  address: 'Adres firmy do uzupełnienia, Polska',
-  hours: 'Poniedziałek–Piątek, 8:00–16:00'
+  name: 'MAX-DAM Damian Czmok',
+  tagline: 'Autoryzowany Sprzedawca i Serwis Ceccato',
+  description: 'Jesteśmy autoryzowanym partnerem włoskiej firmy Ceccato. Od 2005 roku nasza firma zajmuje się sprzedażą, montażem oraz serwisem myjni automatycznych oraz urządzeń wysokociśnieniowych. Wspieramy inwestorów i przedsiębiorców w wyborze nowoczesnych systemów myjących. Pomagamy dobrać rozwiązanie do potrzeb obiektu, rodzaju pojazdów i planowanej skali działalności. Następnie oferujemy wsparcie w montażu, uruchomieniu i serwisowaniu urządzeń. Zakres naszej działalności obejmuje teren całego kraju.',
+  phone: '+48 668 401 280',
+  email: 'damczm@wp.pl',
+  address: 'ul. Tokarska 12, 44-151 Gliwice',
 };
 
 export const products: Product[] = [
@@ -64,12 +63,12 @@ export const products: Product[] = [
     features: ['Rozwiązania dla profesjonalnych obiektów', 'Różne warianty wyposażenia', 'Dobór do założeń inwestycji']
   },
   {
-    slug: 'baltic',
-    name: 'Baltic',
+    slug: 'polar',
+    name: 'Polar',
     category: 'truck',
     eyebrow: 'Pojazdy ciężarowe i użytkowe',
     shortDescription: 'System mycia zaprojektowany z myślą o pojazdach ciężarowych, autobusach i flotach.',
-    description: 'Baltic to rozwiązanie dla operatorów flot, firm transportowych i inwestorów planujących myjnię pojazdów wielkogabarytowych. Szczegóły konfiguracji wymagają potwierdzenia z producentem.',
+    description: 'Polar to rozwiązanie dla operatorów flot, firm transportowych i inwestorów planujących myjnię pojazdów wielkogabarytowych. Szczegóły konfiguracji wymagają potwierdzenia z producentem.',
     image: 'https://images.unsplash.com/photo-1519003722824-194d4455a60c',
     features: ['Obsługa pojazdów ciężarowych i użytkowych', 'Konfiguracja do profilu floty', 'Możliwość doboru systemów myjących'],
     badge: 'Myjnie ciężarowe'
@@ -77,8 +76,7 @@ export const products: Product[] = [
 ];
 
 export const imagePlaceholders = {
-  hero: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70',
-  passenger: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70',
-  truck: 'https://images.unsplash.com/photo-1519003722824-194d4455a60c',
-  facility: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3'
+  passenger: 'https://images.unsplash.com/photo-1605164598708-25701594473e',
+  truck: 'https://images.unsplash.com/photo-1703130931625-832a67f5ed99',
+  facility: 'https://scontent.fktw4-1.fna.fbcdn.net/v/t39.30808-6/509355527_30009053738743431_5480860429020763634_n.jpg'
 };
