@@ -33,8 +33,10 @@ import { ProductCardComponent } from '../../shared/product-card/product-card.com
 
     <section class="section-space">
       <div class="container-shell grid items-center gap-12 lg:grid-cols-2">
-        <div class="overflow-hidden rounded-4xl"><img src="assets/images/macan.jpg" alt="Zaplecze techniczne — zdjęcie poglądowe" class="h-[20rem] sm:h-[26rem] 2xl:h-[34rem] w-full object-cover" loading="lazy" /></div>
-        <div><p class="mb-3 text-xs font-extrabold uppercase tracking-[.18em] text-brand-600">Dlaczego MAX-DAM?</p><h2 class="text-[clamp(1.875rem,2.7vw,3.5rem)] font-extrabold tracking-tight text-ink">Partner w wyborze rozwiązania, nie tylko dostawca urządzenia.</h2><p class="mt-5 leading-8 text-slate-600">Pomagamy przejść od pomysłu do wyboru technologii. Poznajemy potrzeby inwestycji, omawiamy dostępne możliwości i pomagamy znaleźć rozwiązanie dopasowane do planowanego obiektu.</p>
+        <div>
+          <p class="mb-3 text-xs font-extrabold uppercase tracking-[.18em] text-brand-600">Dlaczego MAX-DAM?</p>
+          <h2 class="text-[clamp(1.875rem,2.7vw,3.5rem)] font-extrabold tracking-tight text-ink">Partner w wyborze rozwiązania, nie tylko dostawca urządzenia.</h2>
+          <p class="mt-5 leading-8 text-slate-600">Pomagamy przejść od pomysłu do wyboru technologii. Poznajemy potrzeby inwestycji, omawiamy dostępne możliwości i pomagamy znaleźć rozwiązanie dopasowane do planowanego obiektu.</p>
           <div class="mt-8 mb-4 grid gap-5 sm:grid-cols-2">
             <div class="rounded-2xl border border-slate-200 bg-white p-5"><span class="text-2xl text-brand-600">✦</span><h3 class="mt-3 font-bold">Dobór technologii</h3><p class="mt-2 text-sm leading-6 text-slate-500">Rozwiązanie dopasowane do potrzeb obiektu.</p></div>
             <div class="rounded-2xl border border-slate-200 bg-white p-5"><span class="text-2xl text-brand-600">◎</span><h3 class="mt-3 font-bold">Wsparcie inwestora</h3><p class="mt-2 text-sm leading-6 text-slate-500">Kontakt i pomoc na etapie planowania.</p></div>
@@ -45,6 +47,7 @@ import { ProductCardComponent } from '../../shared/product-card/product-card.com
             </a>
           <!-- <a routerLink="/o-firmie" class="mt-8 inline-flex font-bold text-xl text-brand-700 hover:text-brand-500">Więcej o MAX-DAM →</a> -->
         </div>
+        <div class="overflow-hidden rounded-4xl"><img src="assets/images/macan.jpg" alt="Zaplecze techniczne — zdjęcie poglądowe" class="h-[20rem] sm:h-[26rem] 2xl:h-[34rem] w-full object-cover" loading="lazy" /></div>
       </div>
     </section>
 
