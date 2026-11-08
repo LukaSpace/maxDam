@@ -74,8 +74,8 @@ export class ContactComponent {
       `Temat: ${this.form.topic}`,
       '',
       'Wiadomość:',
-      this.form.message.trim(),
-    ].join('\n');
+      this.form.message.trim().replace(/\r?\n/g, '\r\n'),
+    ].join('\r\n');
     const mailto = `mailto:${this.company.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
     this.submitted = true;
